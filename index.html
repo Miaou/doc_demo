@@ -1,24 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>HTML and CSS "Hello World"</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BalCCon 2k25 Demo help center</title>
   <style>
     body {
-      background-color: #2D2D2D;
+      background-color: #4D4D4D;
+      margin: 0;
+      font-family: sans-serif;
+      display: grid;
+      justify-content: center;
+      padding: 1rem;
+      /*gap: 8%;*/
+      gap: 4rem;
     }
 
-    h1 {
-      color: #C26356;
-      font-size: 30px;
-      font-family: Menlo, Monaco, fixed-width;
+    .grid {
+      display: grid;
+      gap: 1rem;
+      /*max-width: 100%;*/
+      max-width: 900px;
     }
 
-    p {
-      color: white;
-      font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
+    .row-1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .row-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .row-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .row-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto; /* preserves aspect ratio */
+      display: block;
+      margin: auto; /* centers if image smaller than cell */
     }
   </style>
 </head>
 <body>
-  <h1>Hello World Example</h1>
-  <p>This is a very basic "Hello World" example made up in HTML and CSS. See if you can change the size of the header text above.</p>
+  <div class="grid row-2">
+    <img src="hml.z.png" style="max-width: 65%">
+    <img src="clouds_mines_walkers.png">
+  </div>
+
+  <div class="grid row-3">
+    <img src="mines_slow.png">
+    <img src="hml.x.png">
+    <img src="mines_fast.png">
+  </div>
+
+  <div class="grid row-3">
+    <img src="walkers0.png">
+    <img src="hml.x.png">
+    <img src="walkers_colors.png">
+
+    <img src="walkers_thin.png">
+    <img src="hml.y.png">
+    <img src="walkers_chaos.png">
+  </div>
+
+  <div class="grid row-3">
+    <img src="clouds0.png">
+    <img src="hml.x.png">
+    <img src="clouds_fast.png">
+
+    <img src="clouds0.png">
+    <img src="hml.y.png">
+    <img src="clouds_level.png">
+
+    <img src="clouds0.png">
+    <img src="hMl.x.png">
+    <img src="clouds_grad_zoom.png">
+
+    <img src="clouds0.png">
+    <img src="hMl.z.png">
+    <img src="clouds_grad_offset.png">
+
+    <img src="clouds0.png">
+    <img src="Hml.y.png">
+    <img src="clouds_dense.png">
+
+    <img src="clouds0.png">
+    <img src="Hml.z.png">
+    <img src="clouds_darker.png">
+
+    <img src="clouds_chaos.png">
+    <img src="HML.png">
+    <img src="clouds0.png">
+  </div>
 </body>
 </html>
